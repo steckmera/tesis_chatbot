@@ -5,8 +5,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 # Cargar el modelo y el tokenizador
-model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
-tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
+model = AutoModelForCausalLM.from_pretrained("./drive/MyDrive/UEES/my_fine_tuned_llama")
+tokenizer = AutoTokenizer.from_pretrained("./drive/MyDrive/UEES/my_fine_tuned_llama")
 
 # Ensure the entire model is on the same device (GPU if available)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
