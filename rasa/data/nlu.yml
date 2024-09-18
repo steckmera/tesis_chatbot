@@ -1,0 +1,163 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - holis
+    - buenas
+    - buen dia
+    - buenos dias
+    - buenas noches
+    - buenas tardes
+    - buenas estimado
+    - me puedes ayudar
+    - una consulta
+    - hola amigo
+    - hola estimado
+    - hola
+
+- intent: goodbye
+  examples: |
+    - fue un placer
+    - hasta pronto
+    - nos vemos luego
+    - bye
+    - adios
+    - que tengas un lindo día
+    - ya nos veremos
+    - chao
+    - nos vemos despues
+
+- intent: affirm
+  examples: |
+    - si
+    - ok
+    - claro
+    - está bien
+    - perfecto
+    - correcto
+    - acepto
+
+- intent: deny
+  examples: |
+    - no
+    - no estoy de acuerdo
+    - nunca
+    - no me parece
+    - no me gusta eso
+    - de ninguna manera
+    - en realidad no
+
+- intent: mood_great
+  examples: |
+    - excelente
+    - increíble
+    - sintiéndome como un rey
+    - maravilloso
+    - me siento muy bien
+    - estoy genial
+    - soy asombroso
+    - yo voy a salvar el mundo
+    - súper entusiasmado
+    - extremadamente bien
+    - muy bien
+    - bien
+
+- intent: mood_unhappy
+  examples: |
+    - mi dia fue horrible
+    - estoy triste
+    - no me siento muy bien
+    - estoy decepcionado
+    - súper triste
+    - estoy muy triste
+    - triste
+    - muy triste
+    - infeliz
+    - no estoy bien
+    - esyou muy mal
+    - extremadamente triste
+    - tan triste
+
+- intent: bot_challenge
+  examples: |
+    - eres un bot?
+    - eres humano?
+    - estoy hablando con un bot?
+    - estoy hablando con un humano?
+
+- intent: bot_bienvenida
+  examples: |
+    - bienvenido soy tu bot presto para ayudarte!
+    - Hola soy tu bot, estoy listo para ayudarte!
+
+- intent: user_bienvenida
+  examples: |
+    - bienvenido estimado usuario, en que puedo ayudarte?
+    - Hola estimado usuario, en que puedo ayudarte?
+
+- intent: hola_mundo
+  examples: |
+    - hola mundo
+    - hola eddy
+
+- intent: menu_principal
+  examples: |
+    - inicio
+    - menu
+
+- intent: menu_admisiones
+  examples: |
+    - admisiones
+    - menu admisiones
+
+- intent: informacion_admisiones
+  examples: |
+    - informacion
+    - informacion admisiones
+    
+- intent: requisitos_admisiones
+  examples: |
+    - requisitos
+    - cuales son los requisitos
+    - que se necesita para inscribir
+
+- intent: valores_admisiones
+  examples: |
+    - valores
+    - cuales son los valores
+    - valor de pensiones
+    - valor matricula
+    - pensiones
+
+- intent: menu_administracion
+  examples: |
+    - administracion
+    - menu administracion
+
+- intent: horarios_administracion
+  examples: |
+    - horarios
+    - atencion
+    - horarios de atencion
+
+- intent: pagos_administracion
+  examples: |
+    - pagos
+    - cobranza
+    - recaudacion
+    - cobros
+    - deuda
+
+- intent: transporte_administracion
+  examples: |
+    - transporte
+    - expreso
+    - klm
+    - servicio de transporte
+
+- intent: menu_sistemas
+  examples: |
+    - sistemas
+    - menu sistemas

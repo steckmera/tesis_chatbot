@@ -1,0 +1,130 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: informacion admisiones path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: menu_principal
+  - action: utter_menu_principal
+  - intent: menu_admisiones
+  - action: utter_menu_admisiones
+  - intent: informacion_admisiones
+  - action: action_informacion_admisiones
+  
+- story: informacion admisiones path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: menu_principal
+  - action: utter_menu_principal
+  - intent: menu_admisiones
+  - action: utter_menu_admisiones
+  - intent: requisitos_admisiones
+  - action: action_requisitos_admisiones
+
+- story: informacion admisiones path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: menu_principal
+  - action: utter_menu_principal
+  - intent: menu_admisiones
+  - action: utter_menu_admisiones
+  - intent: valores_admisiones
+  - action: action_valores_admisiones
+
+- story: informacion administracion path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: menu_principal
+  - action: utter_menu_principal
+  - intent: menu_administracion
+  - action: utter_menu_administracion
+  - intent: horarios_administracion
+  - action: action_horarios_administracion
+
+- story: informacion administracion path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: menu_principal
+  - action: utter_menu_principal
+  - intent: menu_administracion
+  - action: utter_menu_administracion
+  - intent: pagos_administracion
+  - action: action_pagos_administracion
+
+- story: informacion administracion path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: menu_principal
+  - action: utter_menu_principal
+  - intent: menu_administracion
+  - action: utter_menu_administracion
+  - intent: transporte_administracion
+  - action: action_transporte_administracion
+
+#- story: admisiones path 2
+#  steps:
+#  - intent: informacion_admisiones
+#  - action: action_informacion_admisiones
+#  - intent: affirm
+#  - action: action_oferta_academica
+#  - intent: affirm
+#  - action: action_requisitos_admisiones
+
+#- story: admisiones path 3
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_great
+#  - action: utter_happy
+#  - intent: informacion_admisiones
+#  - action: action_informacion_admisiones
+#  - intent: deny
+#  - action: utter_new_that_help
+#  - intent: affirm

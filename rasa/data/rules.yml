@@ -1,0 +1,69 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Mostrar menu principal
+  steps:
+  - intent: menu_principal
+  - action: utter_menu_principal
+
+- rule: Mostrar menu admisiones
+  steps:
+  - intent: menu_admisiones
+  - action: utter_menu_admisiones
+
+- rule: Mostrar menu administracion
+  steps:
+  - intent: menu_administracion
+  - action: utter_menu_administracion
+
+- rule: Mostrar menu sistemas
+  steps:
+  - intent: menu_sistemas
+  - action: utter_menu_sistemas
+
+- rule: solicita informacion admisiones
+  steps:
+  - intent: informacion_admisiones
+  - action: action_informacion_admisiones
+
+- rule: solicita requisitos admisiones
+  steps:
+  - intent: requisitos_admisiones
+  - action: action_requisitos_admisiones
+
+- rule: solicita valores admisiones
+  steps:
+  - intent: valores_admisiones
+  - action: action_valores_admisiones
+
+- rule: solicita horarios administracion
+  steps:
+  - intent: horarios_administracion
+  - action: action_horarios_administracion
+
+- rule: solicita pagos administracion
+  steps:
+  - intent: pagos_administracion
+  - action: action_pagos_administracion
+
+- rule: solicita transporte administracion
+  steps:
+  - intent: transporte_administracion
+  - action: action_transporte_administracion
+
+
+- rule: actions hola mundo
+  steps:
+  - intent: hola_mundo
+  - action: action_requisitos_admisiones

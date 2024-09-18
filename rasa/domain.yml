@@ -1,0 +1,97 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hola_mundo
+  - bot_bienvenida
+  - user_bienvenida
+  - menu_principal
+  - menu_admisiones
+  - menu_administracion
+  - menu_sistemas
+  - informacion_admisiones
+  - requisitos_admisiones
+  - valores_admisiones
+  - horarios_administracion
+  - pagos_administracion
+  - transporte_administracion
+
+
+responses:
+  utter_greet:
+  - text: "Hola! Como estás?"
+  - text: "Es un placer! Como estás?"
+
+  utter_cheer_up:
+  - text: "aquí hay algo para animarte:"
+    image: "https://content.clara.es/medio/2023/03/24/frases-motivadoras-cortas-b_54e475c6_230324144652_800x800.jpg"
+
+  utter_did_that_help:
+  - text: "eso te ayudó?"
+
+  utter_new_that_help:
+  - text: "entiendo, te puedo ayudar con algo más?"
+
+  utter_happy:
+  - text: "genial, en que te puedo ayudar? escribe: menu"
+           
+  utter_menu_principal:
+  - text: "selecciona un tema:\n
+           admisiones\n
+           administracion\n
+           sistemas\n
+          "
+  utter_goodbye:
+  - text: "chao, fue un placer atenderlo."
+  - text: "adios, fue un placer atenderlo."
+  - text: "chao, que tenga un buen día."
+
+  utter_iamabot:
+  - text: "soy un bot, impulsado por Rasa."
+
+  utter_bot_bienvenida:
+  - text: "bienvenido soy tu bot"
+
+  utter_user_bienvenida:
+  - text: "bienvenido estimado usuario"
+
+  utter_menu_admisiones:
+  - text: "selecciona una opcion:\n
+          informacion\n
+          requisitos\n
+          valores\n
+          "
+
+  utter_menu_administracion:
+  - text: "selecciona una opcion:\n
+          horarios de atencion\n
+          pagos\n
+          transporte\n
+          "
+
+  utter_menu_sistemas:
+  - text: "selecciona una opcion:\n
+          problemas con credenciales\n
+          sistema academico\n
+          crear ticket\n
+          "
+
+actions:
+  - action_hola_mundo
+  - action_informacion_admisiones
+  - action_requisitos_admisiones
+  - action_valores_admisiones
+  - action_horarios_administracion
+  - action_pagos_administracion
+  - action_transporte_administracion
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
